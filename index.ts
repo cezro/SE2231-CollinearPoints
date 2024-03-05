@@ -63,7 +63,11 @@ let sketch = function (p) {
       p.line(this.x, this.y, that.x, that.y);
     }
 
-    slopeTo(that: Point): number {}
+    slopeTo(that: Point): number {
+      const rise = that.y-this.y
+      const run = that.x-this.x
+      return rise/run
+    }
   }
 
   class LineSegment {
