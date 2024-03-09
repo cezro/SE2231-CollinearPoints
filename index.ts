@@ -102,7 +102,7 @@ let sketch = function (p) {
     }
 
     numberOfSegments(): number {
-      // YOUR CODE HERE
+      
     }
 
     segments(): LineSegment[] {
@@ -142,11 +142,7 @@ let sketch = function (p) {
     p.translate(padding, height - padding);
     p.scale(1/100, -1/100);
 
-    // Call your draw and drawTo here.
-
-    // point.draw();
-    // point2.draw();
-    // point.drawTo(point2);
+    
 
     for (const point of points) {
       point.draw();
